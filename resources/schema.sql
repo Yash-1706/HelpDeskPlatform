@@ -107,3 +107,8 @@ CREATE TABLE TICKET_HISTORY (
                                 status ENUM('open', 'in_progress', 'resolved', 'closed'),
                                 FOREIGN KEY (ticket_id) REFERENCES TICKET(ticket_id)
 );
+
+-- Optional Data for Testing
+INSERT INTO CATEGORY (name, description) VALUES ('Technical', 'Technical support issues');
+INSERT INTO AGENT (name, email) VALUES ('Support Agent A', 'agent1@example.com');
+INSERT INTO CUSTOMER (name, phone_number, email) VALUES ('Yash Gaikwad', '9999988888', 'yash@example.com');
